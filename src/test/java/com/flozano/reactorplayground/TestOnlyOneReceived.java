@@ -27,7 +27,7 @@ public class TestOnlyOneReceived {
 	@Before
 	public void setUp() {
 		r = Reactors.reactor().env(new Environment())
-				.dispatcher(Environment.EVENT_LOOP).get();
+				.dispatcher(Environment.THREAD_POOL).get();
 	}
 
 	@Test
